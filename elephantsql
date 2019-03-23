@@ -1,0 +1,13 @@
+create table users (
+  id serial primary key,
+  email text not null unique,
+  password text not null,
+  firstname text,
+  lastname text
+);
+
+insert into users (email, password) values ('test@example.com', '12345')
+
+select * from users
+
+postgres://rrffuqac:mEmowyG0O-9JoVKMVhHA40HzUKtHx11K@isilo.db.elephantsql.com:5432/rrffuqac
